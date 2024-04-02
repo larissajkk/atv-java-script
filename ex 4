@@ -1,0 +1,29 @@
+main();
+function main() {
+    const mat1 = [];
+    let valor = 1;
+    let soma = 0;
+
+// Preenchendo a matriz e calculando a soma
+    for (let l = 0; l < 4; l++) {
+        mat1[l] = [];
+        for (let c = 0; c < 4; c++) {
+            mat1[l][c] = valor;
+            valor = valor * 2;
+
+            soma = soma + mat1[l][c];
+        }
+    }
+
+    // Imprimindo a matriz
+    for (let l = 0; l < 4; l++) {
+        let linha = '';
+        for (let c = 0; c < 4; c++) {
+            linha += `| ${mat1[l][c]} |`;
+        }
+        console.log(linha);
+    }
+
+    // Imprimindo a soma da matriz
+    console.log(`A soma da matriz = ${soma}\n`);
+}
