@@ -1,0 +1,19 @@
+main();
+
+
+
+const prompt = require('prompt-sync')();
+
+function main() {
+    let mat, value;
+
+    console.log("Qual a Matricula:");
+    mat = parseInt(prompt(''));
+
+    console.log("Qual o valor da mensalidade:");
+    value = parseFloat(prompt(''));
+
+    console.log(`O aluno ${mat} paga mensalmente R$ ${value.toFixed(2)}`);
+}
+
+main();
