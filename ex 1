@@ -1,0 +1,25 @@
+function main() {
+    const hora = 10.00;
+    const horaextra = 15.00;
+    let horas_normais = 0,
+        horas_extras = 0,
+        horasnorm_resul = 0,
+        horasext_resul = 0,
+        resul = 0,
+        poup = 0;
+    horas_normais = parseFloat(prompt("Informe o número de horas normais trabalhadas no ano:"));
+    horas_extras = parseFloat(prompt("Informe o número de horas extras trabalhadas no ano:"));
+
+    horasnorm_resul = horas_normais * hora;
+    horasext_resul = horas_extras * horaextra;
+    resul = horasnorm_resul + horasext_resul;
+
+    poup = resul * 0.08;
+
+    console.log("");
+    console.log(`Valor de horas normais: ${horasnorm_resul.toFixed(2)} reais\n`);
+    console.log(`Valor de horas extras: ${horasext_resul.toFixed(2)} reais\n`);
+    console.log(`Total de ganho no ano = ${resul.toFixed(2)} reais\n`);
+    console.log(`Valor a guardar na poupança = ${poup.toFixed(2)} reais\n`);
+    console.log("");
+}
